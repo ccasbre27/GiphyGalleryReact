@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import { GiftExperApp } from './GiftExpertApp';
+import { GiftExpertApp } from './GiftExpertApp';
 
 ReactDOM.render(
-    <GiftExperApp />,
+    <GiftExpertApp />,
   document.getElementById('root')
 );
 

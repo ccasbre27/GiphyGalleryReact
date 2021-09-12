@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <GifGrid /> should render the component 1`] = `
+<div>
+  <h3>
+     
+    Dragon Ball
+     
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <ol>
+      <GifGridItem
+        id="ABC"
+        key="ABC"
+        title="Lorem ipsum"
+        url="https://localhost/something"
+      />
+      <GifGridItem
+        id="ABCD"
+        key="ABCD"
+        title="Lorem ipsum"
+        url="https://localhost/something"
+      />
+    </ol>
+  </div>
+</div>
+`;

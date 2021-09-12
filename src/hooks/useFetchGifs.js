@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { getGifs } from '../helpers/getGifs';
 
-export const useFetchGrids = (category) => {
+export const useFetchGifs = (category) => {
 
     const [state, setState] = useState({
         data: [],
@@ -13,9 +13,8 @@ export const useFetchGrids = (category) => {
             .then( imgs => {
 
                 setTimeout( () => {
-                    
                     setState({ data: imgs, loading: false }) ;
-                }, 3000);
+                }, 1500);
             })
                 
     }, [ category ]); // el arreglo vacío indica que sólo se renderiza una vez

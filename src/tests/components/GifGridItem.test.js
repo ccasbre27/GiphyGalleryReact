@@ -20,6 +20,7 @@ describe('Tests on <GifGridItem />', () => {
     test('should have a paragraph with the title', () => {
        
         const paragraph = wrapper.find('p');
+        
         expect( paragraph.text().trim() ).toBe( title );
 
     });
@@ -27,6 +28,7 @@ describe('Tests on <GifGridItem />', () => {
     test('should load the sent url to display proper image and fill the alt with the title', () => {
         
         const img = wrapper.find('img');
+        
         expect( img.prop('src') ).toBe( url );
         expect( img.prop('alt') ).toBe( title );
 
@@ -36,6 +38,7 @@ describe('Tests on <GifGridItem />', () => {
     test('should have animate__fadeIn class', () => {
         
         const div = wrapper.find( 'div' );
+        
         expect( div.prop('className') ).toContain('animate__fadeIn');
         
     })
